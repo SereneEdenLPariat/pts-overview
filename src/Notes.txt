@@ -1,0 +1,12 @@
+{
+  /* {isLoggedIn && (
+        <div className="login">
+          Email: {email}
+          <br></br>
+          Password:{password}
+        </div>
+      )}
+    </div>
+  );
+}; */
+}

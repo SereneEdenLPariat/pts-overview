@@ -1,0 +1,75 @@
+@media (max-width: 2400px) {
+  form {
+    margin: auto;
+    background-color: #375f6d;
+    display: grid;
+    place-items: center;
+    margin-top: 100px;
+    box-shadow: 0 0 12px rgb(182 182 182 / 51%);
+    border-radius: 30px;
+    padding: 5px 40px 50px 40px;
+    text-align: center;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  img {
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
+    width: 180px;
+    margin-right: 20px;
+    padding: 40px 40px 30px 30px;
+  }
+
+  #inputEmail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 200px;
+    background: #edf0f3;
+    padding: 10px 30px 10px 30px;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  #inputPassword {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    width: 200px;
+    background: #edf0f3;
+    padding: 10px 30px 10px 30px;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  #login-label {
+    font-family: inherit;
+    margin-top: 15px;
+    background-color: #3fcbc8;
+    color: #375f6d;
+    border-radius: 50px;
+    width: 150px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bolder;
+    padding: 4px 10px 10px 10px;
+  }
+  #forgot {
+    font-size: 15px;
+    font-weight: bolder;
+    color: white;
+    padding: 20px 10px 10px 10px;
+  }
+  .login {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
