@@ -7,14 +7,13 @@ import "./LogIn.css";
 const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+
+  // const [error, setError] = useState("");
   const navigate = useNavigate();
 
   const onHandlesubmit = (e) => {
-    {
-    }
     e.preventDefault();
-    setIsLoggedIn(true);
+
     navigate("/dashboard/Overview");
     setEmail("");
     setPassword("");
@@ -23,7 +22,9 @@ const LogIn = () => {
   return (
     <div className="form">
       <form onSubmit={onHandlesubmit}>
-        <img src={pts} alt=" PTS" />
+        <div>
+          <img id="image" src={pts} alt=" PTS" />
+        </div>
         <input
           id="inputEmail"
           type="text"
@@ -44,17 +45,6 @@ const LogIn = () => {
           Login
         </button>
       </form>
-      <div className="login">
-        {isLoggedIn && (
-          <>
-            <div>
-              Email:{email}
-              <br></br>
-              Password:{password}
-            </div>
-          </>
-        )}
-      </div>
     </div>
   );
 };

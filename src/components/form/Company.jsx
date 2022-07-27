@@ -3,6 +3,7 @@ import { useState, useReducer } from "react";
 import Navbar from "../Navbar/Navbar";
 import Modal from "@mui/material/Modal";
 import Sidebar from "../sidebar/Sidebar";
+import "./Company.css";
 
 const defaultState = {
   name: "",
@@ -63,7 +64,7 @@ const Company = () => {
   return (
     <div className="main-container">
       <Sidebar />
-      <div>
+      <div className="container">
         <Navbar
           data={[
             { path: "/PersonnelManagement/Company", pathName: "Company" },
@@ -81,104 +82,106 @@ const Company = () => {
 
         {/* <Modal onClose={handleClose} open={open}> */}
         <Modal open={isOpen} onClose={() => setOpen(false)}>
-          <form onSubmit={onHandlesubmit}>
-            <h1>Company</h1>
+          <div className="f_2">
+            <form onSubmit={onHandlesubmit}>
+              <h1>Company</h1>
 
-            <button onClick={onClose}>X</button>
-            <div>
-              <br></br>
-              <label htmlFor="inputName">Name:</label>
-              <input
-                id="inputName"
-                value={state.name}
-                type="text"
-                placeholder="Name"
-                onChange={(e) =>
-                  dispatch({ type: "INPUT_NAME", name: e.target.value })
-                }
-              />
-            </div>
+              <button onClick={onClose}>X</button>
+              <div>
+                <br></br>
+                <label htmlFor="inputName">Name:</label>
+                <input
+                  id="inputName"
+                  value={state.name}
+                  type="text"
+                  placeholder="Name"
+                  onChange={(e) =>
+                    dispatch({ type: "INPUT_NAME", name: e.target.value })
+                  }
+                />
+              </div>
 
-            <div>
-              <br></br>
-              <label htmlFor="inputDescription">Description:</label>
-              <input
-                id="inputDescription"
-                value={state.description}
-                type="text"
-                placeholder="Description"
-                onChange={(e) =>
-                  dispatch({
-                    type: "INPUT_DESCRIPTION",
-                    description: e.target.value,
-                  })
-                }
-              />
-            </div>
+              <div>
+                <br></br>
+                <label htmlFor="inputDescription">Description:</label>
+                <input
+                  id="inputDescription"
+                  value={state.description}
+                  type="text"
+                  placeholder="Description"
+                  onChange={(e) =>
+                    dispatch({
+                      type: "INPUT_DESCRIPTION",
+                      description: e.target.value,
+                    })
+                  }
+                />
+              </div>
 
-            <div>
-              <br></br>
-              <label htmlFor="inputPhone">Phone:</label>
-              <input
-                id="inputPhone"
-                value={state.phone}
-                type="phone"
-                placeholder="Phone"
-                onChange={(e) =>
-                  dispatch({ type: "INPUT_PHONE", phone: e.target.value })
-                }
-              />
-            </div>
+              <div>
+                <br></br>
+                <label htmlFor="inputPhone">Phone:</label>
+                <input
+                  id="inputPhone"
+                  value={state.phone}
+                  type="phone"
+                  placeholder="Phone"
+                  onChange={(e) =>
+                    dispatch({ type: "INPUT_PHONE", phone: e.target.value })
+                  }
+                />
+              </div>
 
-            <div>
+              <div>
+                <br></br>
+                <label htmlFor="inputEmail">Email</label>
+                <input
+                  id="inputEmail"
+                  value={state.email}
+                  type="email"
+                  placeholder="Email"
+                  onChange={(e) =>
+                    dispatch({ type: "INPUT_EMAIL", email: e.target.value })
+                  }
+                />
+              </div>
               <br></br>
-              <label htmlFor="inputEmail">Email</label>
-              <input
-                id="inputEmail"
-                value={state.email}
-                type="email"
-                placeholder="Email"
-                onChange={(e) =>
-                  dispatch({ type: "INPUT_EMAIL", email: e.target.value })
-                }
-              />
-            </div>
-            <br></br>
 
-            <div>
-              <br></br>
-              <h5>STATUS:</h5>
-              <label htmlFor="inputStatus">Active </label>
-              <input
-                id="inputStatus"
-                type="radio"
-                value="Active"
-                name="status"
-                onClick={() =>
-                  dispatch({ type: "INPUT_STATUS", status: "active" })
-                }
-              />
-              <label htmlFor="inputStatus">Inactive </label>
-              <input
-                id="inputStatus"
-                type="radio"
-                value="Inactive"
-                name="status"
-                onClick={() =>
-                  dispatch({ type: "INPUT_STATUS", status: "inactive" })
-                }
-              />
-            </div>
+              <div>
+                <br></br>
+                <h5>STATUS:</h5>
+                <label htmlFor="inputStatus">Active </label>
+                <input
+                  id="inputStatus"
+                  type="radio"
+                  value="Active"
+                  name="status"
+                  onClick={() =>
+                    dispatch({ type: "INPUT_STATUS", status: "active" })
+                  }
+                />
+                <label htmlFor="inputStatus">Inactive </label>
+                <input
+                  id="inputStatus"
+                  type="radio"
+                  value="Inactive"
+                  name="status"
+                  onClick={() =>
+                    dispatch({ type: "INPUT_STATUS", status: "inactive" })
+                  }
+                />
+              </div>
 
-            <div>
-              <br></br>
-              <button onClick={onClickReset}>RESET</button>
-              &nbsp;
-              <button type="submit" onClick={onHandlesubmit}>
-                ADD
-              </button>
-            </div>
-          </form>
+              <div>
+                <br></br>
+                <button onClick={onClickReset}>RESET</button>
+                &nbsp;
+                <button type="submit" onClick={onHandlesubmit}>
+                  ADD
+                </button>
+              </div>
+            </form>
+          </div>
         </Modal>
       </div>
     </div>

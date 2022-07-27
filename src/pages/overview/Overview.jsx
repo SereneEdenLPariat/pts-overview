@@ -8,9 +8,7 @@ const data = [{ path: "/Dashboard/Overview", pathName: "Overview" }];
 export const Overview = () => {
   return (
     <div className="main-container">
-      <div className="sidebar">
-        <Sidebar />
-      </div>
+      <Sidebar />
       <div className="navbar">
         <Navbar data={data} />
       </div>

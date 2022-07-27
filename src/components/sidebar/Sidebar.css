@@ -1,6 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
 .sidebar {
-  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  width: 5%;
   height: 100%;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  overflow-y: hidden;
+  border-right: 1px solid black;
+  padding: 10px;
+  background-color: #263942;
+}
+
+.link-img {
+  height: 30px;
+  width: 30px;
+  margin: auto;
+  display: flex;
+  filter: invert(1) sepia(1) saturate(0) hue-rotate(175deg);
+}
+
+.logo {
+  background-color: #0e072b;
+  height: 50px;
+  width: 50px;
+  margin: auto;
+}
+
+.sblogo {
+  height: 400px;
+  width: 50px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
 }

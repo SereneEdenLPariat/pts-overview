@@ -13,11 +13,10 @@
     width: -moz-fit-content;
     width: fit-content;
   }
-  img {
+  #image {
     filter: invert(1) sepia(1) saturate(5) hue-rotate(175deg);
     width: 180px;
     margin-right: 20px;
-    padding: 40px 40px 30px 30px;
   }
 
   #inputEmail {
@@ -58,7 +57,7 @@
     height: 40px;
     font-size: 20px;
     font-weight: bolder;
-    padding: 4px 10px 10px 10px;
+    /* padding: 4px 10px 10px 10px; */
   }
   #forgot {
     font-size: 15px;
