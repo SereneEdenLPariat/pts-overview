@@ -19,7 +19,7 @@ const Navbar = ({ data }) => {
 
       <div className="nav">
         {data.map((link) => (
-          <Link to={link.path}>{link.pathName}</Link>
+          <Link to={link.path}>{link.pathName} &nbsp; </Link>
         ))}
       </div>
     </div>

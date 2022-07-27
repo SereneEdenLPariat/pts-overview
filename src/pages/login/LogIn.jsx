@@ -20,7 +20,7 @@ const LogIn = () => {
   };
 
   return (
-    <div className="form">
+    <div>
       <form onSubmit={onHandlesubmit}>
         <div>
           <img id="image" src={pts} alt=" PTS" />

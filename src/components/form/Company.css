@@ -8,3 +8,145 @@
 .container {
   width: 95%;
 }
+
+.b1{
+  margin: auto;
+  display: grid;
+  place-items: center;
+  margin-top: 100px;
+border-radius: 30px;
+padding: 5px 40px 50px 40px;
+text-align: center;
+width: fit-content;
+}
+
+#Company_Button{
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15px;
+  background-color: #3fcbc8;
+  color: #375f6d;
+  border-radius: 50px;
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+#Form_2{
+  font-family: 'Times New Roman', Times, serif;
+  margin: auto;
+  background-color: #e0bcb2;
+  display: grid;
+  place-items: center;
+  margin-top: 10px;
+  box-shadow: 0 0 12px rgb(182 182 182 / 51%);
+  border-radius: 30px;
+  padding: 0px 40px 20px 40px;
+  text-align: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#ip_Name{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 200px;
+  background: #edf0f3;
+  padding: 5px 30px 5px 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+ 
+#ip_Description{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 200px;
+  background: #edf0f3;
+  padding: 5px 30px 5px 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+#ip_Phone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 200px;
+  background: #edf0f3;
+  padding: 5px 30px 5px 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+#ip_Email{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  width: 200px;
+  background: #edf0f3;
+  padding: 5px 30px 5px 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+  line-height: 1.15;
+  margin: 0;
+}
+
+
+.close-button{
+  width: 30px;
+  height: 30px;
+  margin-top: 25px;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: row;
+  float: right;
+    padding: 5px;
+}
+#b2{
+font-family: 'Times New Roman', Times, serif;  
+background-color: #c0678c;
+}
+
+.lower_button{
+  height:5px;
+  width:200px;
+}
+
+.reset{
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15px;
+  background-color: #c0678c;
+  color:black;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+.add{
+  font-family: 'Times New Roman', Times, serif;
+  margin-top: 15px;
+  background-color: hsl(340, 39%, 60%);
+  color:black;
+  border-radius: 50px;
+  width: 100px;
+  height: 40px;
+  font-size: 15px;
+  font-weight: bolder;
+}
+
+

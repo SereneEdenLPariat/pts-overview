@@ -10,7 +10,7 @@ class App extends React.Component {
       <Router>
         <Routes>
           <Route path="/" element={<LogIn />} />
-          <Route path="/dashboard/Overview" element={<Overview />} />
+          <Route path="/dashboard/Overview" element={<Overview/>} />
           <Route path="/PersonnelManagement/Company" element={<Company />} />
           <Route path="*" element={<h1>Error</h1>} />
         </Routes>

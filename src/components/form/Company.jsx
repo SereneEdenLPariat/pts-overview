@@ -67,34 +67,34 @@ const Company = () => {
       <div className="container">
         <Navbar
           data={[
-            { path: "/PersonnelManagement/Company", pathName: "Company" },
-            { path: "/PersonnelManagement/Team", pathName: "Team" },
+            { path: "/PersonnelManagement/Company", pathName: "Company " },
+            { path: "/PersonnelManagement/Team", pathName: "Team " },
             {
               path: "/Personnel Management/Individual",
               pathName: "Individual",
             },
           ]}
         />
-
-        <button type="button" onClick={handleOpen}>
+<div className="b1">
+        <button id="Company_Button" type="button" onClick={handleOpen}>
           Company
         </button>
-
-        {/* <Modal onClose={handleClose} open={open}> */}
+        </div>
         <Modal open={isOpen} onClose={() => setOpen(false)}>
           <div className="f_2">
-            <form onSubmit={onHandlesubmit}>
-              <h1>Company</h1>
-
-              <button onClick={onClose}>X</button>
+            <form id="Form_2" onSubmit={onHandlesubmit}>
+<div className="close-button">
+            <button id="b2" onClick={onClose}>X</button>
+            </div>
+    
               <div>
-                <br></br>
+              <h1>Company</h1>
                 <label htmlFor="inputName">Name:</label>
                 <input
-                  id="inputName"
+                  id="ip_Name"
                   value={state.name}
                   type="text"
-                  placeholder="Name"
+                  placeholder="Enter Your Name"
                   onChange={(e) =>
                     dispatch({ type: "INPUT_NAME", name: e.target.value })
                   }
@@ -105,10 +105,10 @@ const Company = () => {
                 <br></br>
                 <label htmlFor="inputDescription">Description:</label>
                 <input
-                  id="inputDescription"
+                  id="ip_Description"
                   value={state.description}
                   type="text"
-                  placeholder="Description"
+                  placeholder=" Enter Description"
                   onChange={(e) =>
                     dispatch({
                       type: "INPUT_DESCRIPTION",
@@ -122,10 +122,10 @@ const Company = () => {
                 <br></br>
                 <label htmlFor="inputPhone">Phone:</label>
                 <input
-                  id="inputPhone"
+                  id="ip_Phone"
                   value={state.phone}
                   type="phone"
-                  placeholder="Phone"
+                  placeholder="Enter Phone No."
                   onChange={(e) =>
                     dispatch({ type: "INPUT_PHONE", phone: e.target.value })
                   }
@@ -134,25 +134,24 @@ const Company = () => {
 
               <div>
                 <br></br>
-                <label htmlFor="inputEmail">Email</label>
+                <label htmlFor="ip_Email">Email:</label>
                 <input
-                  id="inputEmail"
+                  id="ip_Email"
                   value={state.email}
                   type="email"
-                  placeholder="Email"
+                  placeholder="Enter Email"
                   onChange={(e) =>
                     dispatch({ type: "INPUT_EMAIL", email: e.target.value })
                   }
                 />
               </div>
-              <br></br>
+
 
               <div>
-                <br></br>
                 <h5>STATUS:</h5>
                 <label htmlFor="inputStatus">Active </label>
                 <input
-                  id="inputStatus"
+                  id="ip_Status"
                   type="radio"
                   value="Active"
                   name="status"
@@ -162,7 +161,7 @@ const Company = () => {
                 />
                 <label htmlFor="inputStatus">Inactive </label>
                 <input
-                  id="inputStatus"
+                  id="ip_Status"
                   type="radio"
                   value="Inactive"
                   name="status"
@@ -174,11 +173,17 @@ const Company = () => {
 
               <div>
                 <br></br>
-                <button onClick={onClickReset}>RESET</button>
-                &nbsp;
-                <button type="submit" onClick={onHandlesubmit}>
+                <div className="lower_buttons">
+               
+                <button className="reset" onClick={onClickReset}>RESET</button>
+        
+  &nbsp;
+  &nbsp;
+                <button className="add" type="submit" onClick={onHandlesubmit}>
                   ADD
                 </button>
+            
+                </div>
               </div>
             </form>
           </div>

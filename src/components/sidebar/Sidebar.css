@@ -24,17 +24,9 @@
 }
 
 .logo {
-  background-color: #0e072b;
   height: 50px;
-  width: 50px;
-  margin: auto;
-}
-
-.sblogo {
-  height: 400px;
   width: 50px;
   margin: auto;
   display: flex;
   flex-direction: column;
-  justify-content: end;
 }

@@ -4,47 +4,43 @@ import {
   Dashboard,
   Personnel_Stats,
   Personnel_Management,
-  ptslogo,
+  Project_Mgmt,
+  Sblogo
 } from "../../assets/logo";
-
-import ps from "../../assets/02_personnelstats.svg";
-import pm from "../../assets/03_personnelmgmt.svg";
-import pr from "../../assets/04_projectmgmt.svg";
-import pts from "../../assets/00_ptslogo.svg";
-import sblogo from "../../assets/05_sblogo.svg";
 import "./Sidebar.css";
 
 const Sidebar = () => {
   return (
     <div className="sidebar">
-      <div className="logo">
-        <img id="i_1" src={pts} alt="PTS" />
+      <div>
+        <Sblogo className="logo" />
+        {/* <img id="i_1" src={pts} alt="PTS" /> */}
       </div>
       <br></br>
       <Link to="/Dashboard/Overview">
-        <Dashboard />
+        <Dashboard className="link-img" />
       </Link>
       <br></br>
       <Link to="/PersonnelStats">
-        <img className="link-img" id="i_3" src={ps} alt="Personnel Stats" />
+        <Personnel_Stats className="link-img"/>
+        {/* <img className="link-img" id="i_3" src={ps} alt="Personnel Stats" /> */}
       </Link>
       <br></br>
       <Link to="/PersonnelManagement/company">
-        <img
+        <Personnel_Management className="link-img"/>
+        {/* <img
           className="link-img"
           id="i_4"
           src={pm}
           alt="Personnel Management"
-        />
+        /> */}
       </Link>
       <br></br>
       <Link to="/ProjectManagement">
-        <img className="link-img" id="i_5" src={pr} alt="Project Management" />
+        {/* <img className="link-img" id="i_5" src={pr} alt="Project Management" /> */}
+ <Project_Mgmt className="link-img"/>
       </Link>
       <br></br>
-      <div className="sblogo">
-        <img id="i_6" src={sblogo} alt="sb logo" />
-      </div>
     </div>
   );
 };

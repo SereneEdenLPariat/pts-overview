@@ -1,5 +1,5 @@
 @media (max-width: 2400px) {
-  form {
+  form{
     margin: auto;
     background-color: #375f6d;
     display: grid;
@@ -64,11 +64,5 @@
     font-weight: bolder;
     color: white;
     padding: 20px 10px 10px 10px;
-  }
-  .login {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 }
