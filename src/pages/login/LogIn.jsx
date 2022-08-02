@@ -1,10 +1,10 @@
 import React from "react";
 import { useState } from "react";
-import pts from "../../assets/pts_logo_full.svg";
+import { ReactComponent as pts } from "../../assets/pts_logo_full.svg";
 import { useNavigate } from "react-router-dom";
-import "./LogIn.css";
+// import "./LogIn.css";
 
-const LogIn = () => {
+const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -20,12 +20,13 @@ const LogIn = () => {
   };
 
   return (
-    <div>
+    <div data-testid="login">
       <form onSubmit={onHandlesubmit}>
-        <div>
+        <div data-testid="image">
           <img id="image" src={pts} alt=" PTS" />
         </div>
         <input
+          data-testid="input_email"
           id="inputEmail"
           type="text"
           placeholder="Email"
@@ -34,13 +35,16 @@ const LogIn = () => {
         />
         <br></br>
         <input
+          data-testid="input_password"
           id="inputPassword"
           type="password"
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <div id="forgot">Forgot Password?</div>
+        <div data-testid="forgot_password" id="forgot">
+          Forgot Password?
+        </div>
         <button id="login-label" type="submit" onClick={onHandlesubmit}>
           Login
         </button>
@@ -49,4 +53,4 @@ const LogIn = () => {
   );
 };
 
-export default LogIn;
+export default Login;

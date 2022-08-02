@@ -1,9 +1,11 @@
-.main-container {
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  flex-direction: row;
-}
-.container {
-  width: 95%;
+@media (max-width: 2400px) {
+  .main-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+  }
+  .container {
+    width: 95%;
+  }
 }

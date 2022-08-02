@@ -3,7 +3,6 @@ import Navbar from "../../components/Navbar/Navbar";
 import Sidebar from "../../components/sidebar/Sidebar";
 import "./Overview.css";
 
-
 const data = [{ path: "/Dashboard/Overview", pathName: "Overview" }];
 
 export const Overview = () => {

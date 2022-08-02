@@ -2,12 +2,12 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ham from "../../assets/01_hamburger.svg";
 import profile from "../../assets/02_profile.svg";
-import "./Navbar.css";
+//import "./Navbar.css";
 
 const Navbar = ({ data }) => {
   return (
-    <div>
-      <div className="top-Nav">
+    <div data-testid="navigate">
+      <div data-testid="top_nav" className="top-Nav">
         <div className="img_1">
           <img src={ham} alt="Hamburger" />
         </div>
@@ -17,7 +17,7 @@ const Navbar = ({ data }) => {
         </div>
       </div>
 
-      <div className="nav">
+      <div data-testid="nav" className="nav">
         {data.map((link) => (
           <Link to={link.path}>{link.pathName} &nbsp; </Link>
         ))}
